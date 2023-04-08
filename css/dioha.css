@@ -1,0 +1,17 @@
+.swiper-slide img {
+    width: 180px;
+    height: auto;
+    filter: invert(100%) grayscale(100%);
+}
+
+.service-section .content-wrapper {
+	border: 1px solid #474747;
+	padding: 30px 24px;
+	text-align: left;
+	border-radius: 10px;
+	transition: 0.4s;
+}
+
+.features-section .content-block {
+	padding-left: 0px;
+}
