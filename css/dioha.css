@@ -1,7 +1,7 @@
 .swiper-slide img {
-    width: 180px;
+    width: 250px;
     height: auto;
-    filter: invert(100%) grayscale(100%);
+    /* filter: invert(100%) grayscale(100%); */
 }
 
 .service-section .content-wrapper {
@@ -12,6 +12,56 @@
 	transition: 0.4s;
 }
 
-.features-section .content-block {
+.publications.features-section .content-block {
 	padding-left: 0px;
+}
+
+.site-header .navbar-brand {
+	width: 250px;
+}
+
+.site-footer .footer-brand img {
+	width: 300px;
+}
+
+.partner-section {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	background: #fff;
+}
+
+.partner-section .image-wrapper {
+	height: 200px;
+	justify-items: center;
+	align-items: center;
+	display: flex;
+}
+
+.features-section h4 {
+	font-size: 21px;
+	margin-bottom: 12px;
+	color: #b0aac0;
+}
+
+.features-section h4 {
+	font-size: 21px;
+	margin-bottom: 12px;
+	color: #d8d3e6;
+}
+
+.publication-website img {
+	width: 200px;
+	margin: auto;
+}
+
+.publication-website {
+	display: flex;
+	margin: auto;
+	align-items: center;
+	width: max-content;
+	gap: 2em;
+}
+
+.light-background {
+	background: #f2f5fb;
 }
