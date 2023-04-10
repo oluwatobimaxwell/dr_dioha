@@ -1,7 +1,7 @@
 .swiper-slide img {
-    width: 250px;
-    height: auto;
-    /* filter: invert(100%) grayscale(100%); */
+	width: 250px;
+	height: auto;
+	/* filter: invert(100%) grayscale(100%); */
 }
 
 .service-section .content-wrapper {
@@ -54,12 +54,26 @@
 	margin: auto;
 }
 
+.publication-website img:hover {
+	width: 220px;
+}
+
 .publication-website {
 	display: flex;
 	margin: auto;
 	align-items: center;
 	width: max-content;
 	gap: 2em;
+}
+
+@media (max-width: 600px) {
+
+	.publication-website {
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 3em;
+	}
+
 }
 
 .light-background {
