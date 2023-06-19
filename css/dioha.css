@@ -79,3 +79,7 @@
 .light-background {
 	background: #f2f5fb;
 }
+
+.hero-area .image-wrapper img {
+	width: 75% !important;
+}
