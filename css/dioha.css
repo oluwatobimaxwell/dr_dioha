@@ -84,7 +84,7 @@
 	max-width: 75% !important;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 700px) {
 	.hero-area .hero-head {
 		font-size: 50px;
 	}
