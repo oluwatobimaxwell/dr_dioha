@@ -83,3 +83,13 @@
 .hero-area .image-wrapper img {
 	max-width: 75% !important;
 }
+
+@media (max-height: 653px) {
+	.hero-area .hero-head {
+		font-size: 50px;
+	}
+
+	.hero-area .content-block p {
+		font-size: 22px;
+	}
+}
