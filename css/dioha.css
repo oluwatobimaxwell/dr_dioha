@@ -81,5 +81,5 @@
 }
 
 .hero-area .image-wrapper img {
-	width: 75% !important;
+	max-width: 75% !important;
 }
