@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { useGetMainData, useGetWelcomeData } from "../api/hooks";
+import { useIsDataLoaded } from "../api/hooks";
 
 export const useLoadScripts = () => {
-    const { data: mainData } = useGetMainData();
-    const { data: welcomeData } = useGetWelcomeData();
+    const isLoaded = useIsDataLoaded();
 
     useEffect(() => {
         const scriptSources: string[] = [
@@ -48,6 +47,6 @@ export const useLoadScripts = () => {
             }
         };
 
-        if (mainData && welcomeData) loadScriptsSequentially();
-    }, [mainData, welcomeData]);
+        if (isLoaded) loadScriptsSequentially();
+    }, [isLoaded]);
 };
