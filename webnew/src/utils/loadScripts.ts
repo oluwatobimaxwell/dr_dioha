@@ -6,19 +6,19 @@ export const useLoadScripts = () => {
 
     useEffect(() => {
         const scriptSources: string[] = [
-            'src/assets/web/js/jquery.js',
-            'src/assets/web/js/popper.min.js',
-            'src/assets/web/js/bootstrap.min.js',
-            'src/assets/web/js/imagesloaded.pkgd.min.js',
-            'src/assets/web/js/isotope.pkgd.min.js',
-            'src/assets/web/js/swiper-bundle.min.js',
-            'src/assets/web/js/leaflet.js',
-            'src/assets/web/js/jquery.waypoints.min.js',
-            'src/assets/web/js/jquery.counterup.min.js',
-            'src/assets/web/js/aos.js',
-            'src/assets/web/js/jquery.preloadinator.min.js',
-            'src/assets/web/js/vanilla-tilt.min.js',
-            'src/assets/web/js/script.js',
+            'js/jquery.js',
+            'js/popper.min.js',
+            'js/bootstrap.min.js',
+            'js/imagesloaded.pkgd.min.js',
+            'js/isotope.pkgd.min.js',
+            'js/swiper-bundle.min.js',
+            'js/leaflet.js',
+            'js/jquery.waypoints.min.js',
+            'js/jquery.counterup.min.js',
+            'js/aos.js',
+            'js/jquery.preloadinator.min.js',
+            'js/vanilla-tilt.min.js',
+            'js/script.js',
         ];
 
         const loadScript = (scriptSrc: string) => {
