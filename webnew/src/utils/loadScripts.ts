@@ -1,23 +1,10 @@
 import { useEffect } from "react";
-import { useGetMainData } from "../api/hooks";
-
-
-// <script src="src/assets/web/js/jquery.js"></script>
-// 	<script src="src/assets/web/js/popper.min.js"></script>
-// 	<script src="src/assets/web/js/bootstrap.min.js"></script>
-// 	<script src="src/assets/web/js/imagesloaded.pkgd.min.js"></script>
-// 	<script src="src/assets/web/js/isotope.pkgd.min.js"></script>
-// 	<script src="src/assets/web/js/swiper-bundle.min.js"></script>
-// 	<script src="src/assets/web/js/leaflet.js"></script>
-// 	<script src="src/assets/web/js/jquery.waypoints.min.js"></script>
-// 	<script src="src/assets/web/js/jquery.counterup.min.js"></script>
-// 	<script src="src/assets/web/js/aos.js"></script>
-// 	<script src="src/assets/web/js/jquery.preloadinator.min.js"></script>
-// 	<script src="src/assets/web/js/vanilla-tilt.min.js"></script>
-// 	<script src="src/assets/web/js/script.js"></script>
+import { useGetMainData, useGetWelcomeData } from "../api/hooks";
 
 export const useLoadScripts = () => {
-    const { data } = useGetMainData();
+    const { data: mainData } = useGetMainData();
+    const { data: welcomeData } = useGetWelcomeData();
+
     useEffect(() => {
         const scriptSources: string[] = [
             'src/assets/web/js/jquery.js',
@@ -61,6 +48,6 @@ export const useLoadScripts = () => {
             }
         };
 
-        if (data) loadScriptsSequentially();
-    }, [data]);
+        if (mainData && welcomeData) loadScriptsSequentially();
+    }, [mainData, welcomeData]);
 };
