@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "my_publications",
+  "info": {
+    "singularName": "my-publication",
+    "pluralName": "my-publications",
+    "displayName": "Publications",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "publication": {
+      "type": "component",
+      "repeatable": true,
+      "component": "publication.publication-item"
+    },
+    "section": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_contents",
+  "info": {
+    "singularName": "main-content",
+    "pluralName": "main-contents",
+    "displayName": "Main Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "intro": {
+      "type": "text"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "interest": {
+      "type": "text"
+    },
+    "professionalInterest": {
+      "type": "text"
+    },
+    "introImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "professionInterestTitle": {
+      "type": "string"
+    },
+    "schoolIcons": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

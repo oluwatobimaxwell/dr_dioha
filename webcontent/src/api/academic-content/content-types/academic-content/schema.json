@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "academic_contents",
+  "info": {
+    "singularName": "academic-content",
+    "pluralName": "academic-contents",
+    "displayName": "Academic Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "string"
+    },
+    "academics": {
+      "displayName": "Academics",
+      "type": "component",
+      "repeatable": true,
+      "component": "academics.academics"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
