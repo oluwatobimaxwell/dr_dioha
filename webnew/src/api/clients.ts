@@ -1,7 +1,7 @@
 import { AboutMeDataType, AcademicDataType, MainDataType, PublicationType, WelcomeDataType } from "./types";
 
 // Define the URL for the API endpoint
-const apiHost = 'http://localhost:1337';
+const apiHost = import.meta.env.VITE_API_BASE_URL;
 const apiUrl = `${apiHost}/api`;
 
 export async function getMainData(): Promise<MainDataType> {

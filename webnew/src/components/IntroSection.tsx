@@ -48,7 +48,7 @@ export const IntroSection = () => {
             <div className="col-xl-6 order-xl-first content-block">
               <h1 className="hero-head">
                 <small>{data?.intro} </small>
-                {data?.firstName} <strong>{data?.lastName}</strong>, PhD
+                {data?.firstName} <strong>{data?.lastName}</strong>, {data?.title}
               </h1>
               <p dangerouslySetInnerHTML={{ __html: String(data?.interest) }} />
               <hr />
