@@ -1,9 +1,6 @@
 import { useEffect } from "react";
-import { useIsDataLoaded } from "../api/hooks";
 
-export const useLoadScripts = () => {
-    const isLoaded = useIsDataLoaded();
-
+export const useLoadScripts = (isLoaded: boolean) => {
     useEffect(() => {
         const scriptSources: string[] = [
             'js/jquery.js',

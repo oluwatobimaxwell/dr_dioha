@@ -57,5 +57,5 @@ export const useIsDataLoaded = () => {
     aboutData?.title &&
     publicationData?.publication &&
     academicData?.academics;
-  return isLoaded;
+  return !!isLoaded;
 };
