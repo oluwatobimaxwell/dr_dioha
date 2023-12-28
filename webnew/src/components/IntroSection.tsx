@@ -50,12 +50,16 @@ export const IntroSection = () => {
                 <small>{data?.intro} </small>
                 {data?.firstName} <strong>{data?.lastName}</strong>, {data?.title}
               </h1>
-              <p dangerouslySetInnerHTML={{ __html: String(data?.interest) }} />
+              {data?.interest && <p dangerouslySetInnerHTML={{ __html: String(data?.interest) }} />}
               <hr />
               <p>
-                <strong>{data?.professionInterestTitle}</strong>
-                <br />
-                {data?.professionalInterest}
+                {data?.professionInterestTitle && (
+                  <>
+                  <strong>{data?.professionInterestTitle}</strong>
+                  <br />
+                  </>
+                )}
+                {data?.professionalInterest || ""}
               </p>
               <div className="link-group">
                 <a className="btn-main" href="#contact-section">
