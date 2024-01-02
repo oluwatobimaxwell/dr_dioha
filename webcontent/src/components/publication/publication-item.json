@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_publication_publication_items",
+  "info": {
+    "displayName": "PublicationItem",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

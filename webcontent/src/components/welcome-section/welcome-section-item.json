@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_welcome_section_welcome_section_items",
+  "info": {
+    "displayName": "WelcomeSectionItem",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

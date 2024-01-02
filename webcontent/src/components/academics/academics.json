@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_academics_academics",
+  "info": {
+    "displayName": "Academics",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}
