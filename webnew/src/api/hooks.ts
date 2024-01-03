@@ -52,10 +52,10 @@ export const useIsDataLoaded = () => {
   const { data: academicData } = useGetAcademicData();
 
   const isLoaded =
-    mainData?.firstName &&
-    welcomeData?.attributes &&
-    aboutData?.title &&
-    publicationData?.publication &&
-    academicData?.academics;
+    mainData &&
+    welcomeData &&
+    aboutData &&
+    publicationData &&
+    academicData;
   return !!isLoaded;
 };
