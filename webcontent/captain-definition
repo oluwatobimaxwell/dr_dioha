@@ -9,5 +9,23 @@
     "COPY public/ public/",
     "EXPOSE 1337",
     "CMD [\"yarn\", \"start\"]"
+  ],
+  "caproverOneClickAppVariables": [
+    { "name": "ADMIN_JWT_SECRET", "value": "9AuYA5TvhGs709FVqln+PA==" },
+    { "name": "API_TOKEN_SALT", "value": "fwTmbLMjdUTrdEQuqCTJKQ==" },
+    { "name": "APP_KEYS", "value": "1zwOieqwu7nY0Zu1W4049A==,O6w7ovjEtQ9hQ9dM/geYNw==,UUydfPMdK4UzR1yM+gjxYw==,QY+43IbHu7VGn+joKqSHAw==" },
+    { "name": "CLOUDINARY_KEY", "value": "722854184156811" },
+    { "name": "CLOUDINARY_NAME", "value": "dzghxcq0j" },
+    { "name": "CLOUDINARY_SECRET", "value": "73r-yC7TYkYPom0cTfSuKbCxtAQ" },
+    { "name": "DATABASE_CLIENT", "value": "mysql" },
+    { "name": "DATABASE_HOST", "value": "db4free.net" },
+    { "name": "DATABASE_NAME", "value": "dr_mike_dioha" },
+    { "name": "DATABASE_PASSWORD", "value": "c*S=Bd@7J?3yYLe" },
+    { "name": "DATABASE_PORT", "value": "3306" },
+    { "name": "DATABASE_USERNAME", "value": "admin_man" },
+    { "name": "HOST", "value": "0.0.0.0" },
+    { "name": "JWT_SECRET", "value": "jLMosabP/EITBJG65egtxQ==" },
+    { "name": "PORT", "value": "1337" },
+    { "name": "TRANSFER_TOKEN_SALT", "value": "SPkmHDRiQ1s+D6nLemukyQ==" }
   ]
 }
