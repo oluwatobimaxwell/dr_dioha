@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "templateId": "node/14",
+  "templateId": "node/20",
   "dockerfileLines": [],
   "startCommand": "yarn start"
 }
