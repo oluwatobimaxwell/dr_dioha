@@ -30,6 +30,23 @@ jobs:
       - name: Build project
         working-directory: ./webcontent
         run: yarn build
+        env:
+          ADMIN_JWT_SECRET: 9AuYA5TvhGs709FVqln+PA==
+          API_TOKEN_SALT: fwTmbLMjdUTrdEQuqCTJKQ==
+          APP_KEYS: 1zwOieqwu7nY0Zu1W4049A==,O6w7ovjEtQ9hQ9dM/geYNw==,UUydfPMdK4UzR1yM+gjxYw==,QY+43IbHu7VGn+joKqSHAw==
+          CLOUDINARY_KEY: 722854184156811
+          CLOUDINARY_NAME: dzghxcq0j
+          CLOUDINARY_SECRET: 73r-yC7TYkYPom0cTfSuKbCxtAQ
+          DATABASE_CLIENT: mysql
+          DATABASE_HOST: db4free.net
+          DATABASE_NAME: dr_mike_dioha
+          DATABASE_PASSWORD: c*S=Bd@7J?3yYLe
+          DATABASE_PORT: 3306
+          DATABASE_USERNAME: admin_man
+          HOST: 0.0.0.0
+          JWT_SECRET: jLMosabP/EITBJG65egtxQ==
+          PORT: 1337
+          TRANSFER_TOKEN_SALT: SPkmHDRiQ1s+D6nLemukyQ==
 
       - name: Prepare for deployment
         run: |
