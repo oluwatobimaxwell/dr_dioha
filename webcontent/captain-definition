@@ -1,6 +1,13 @@
 {
   "schemaVersion": 2,
-  "templateId": "node/20",
-  "dockerfileLines": [],
-  "startCommand": "yarn start"
+  "dockerfileLines": [
+    "FROM node:20-alpine",
+    "WORKDIR /usr/src/app",
+    "COPY package.json ./",
+    "RUN yarn install --production",
+    "COPY build/ build/",
+    "COPY public/ public/",
+    "EXPOSE 1337",
+    "CMD [\"yarn\", \"start\"]"
+  ]
 }
