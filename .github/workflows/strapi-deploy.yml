@@ -1,0 +1,54 @@
+name: Deploy Strapi to CapRover
+
+on:
+  push:
+    branches:
+      - main
+    # Uncomment the following lines if you want to deploy on tags or specific paths
+    # tags:
+    #   - '!*'
+    # paths:
+    #   - "webcontent/**"
+
+jobs:
+  build-and-deploy-strapi:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: ./webcontent
+        run: yarn install
+
+      - name: Build project
+        working-directory: ./webcontent
+        run: yarn build
+
+      - name: Prepare for deployment
+        run: |
+          mkdir deploy
+          cp -R ./webcontent/build ./deploy/build
+          cp -R ./webcontent/public ./deploy/public
+          cp ./webcontent/package.json ./deploy/package.json
+          cp ./webcontent/captain-definition ./deploy/captain-definition
+
+      - name: Create tar for deployment
+        run: |
+          cd deploy
+          tar -cvf ../deploy.tar ./*
+        shell: bash
+
+      - name: Deploy Strapi App to CapRover
+        uses: caprover/deploy-from-github@v1.0.1
+        with:
+          server: ${{ secrets.CAPROVER_SERVER }}
+          app: ${{ secrets.CAPROVER_APP_NAME }}
+          token: ${{ secrets.CAPROVER_APP_TOKEN }}
+          tarFile: ./deploy.tar
